@@ -1,4 +1,8 @@
 <resources>
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="main_toolbar_height">120dp</dimen>
+    <dimen name="logo_margin_bottom">16dp</dimen>
+
     <!-- detail -->
     <dimen name="detail_title_text_size">32sp</dimen>
     <dimen name="detail_body_text_size">22sp</dimen>
@@ -7,5 +11,4 @@
     <dimen name="fab_elevation">6dp</dimen>
     <dimen name="fab_press_translation_z">12dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
-
 </resources>
