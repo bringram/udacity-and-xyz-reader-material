@@ -16,9 +16,9 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/main_toolbar_height"
+            android:layout_height="?actionBarSize"
             android:elevation="@dimen/appbar_elevation"
-            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             tools:targetApi="LOLLIPOP">
 
@@ -38,6 +38,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/ltgray"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <android.support.v7.widget.RecyclerView
