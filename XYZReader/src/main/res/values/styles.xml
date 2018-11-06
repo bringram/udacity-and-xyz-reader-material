@@ -24,36 +24,59 @@
     </style>
 
     <style name="Theme.Bacon.CardView">
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:clickable">true</item>
-        <item name="android:focusable">true</item>
-        <item name="android:foreground">?selectableItemBackground</item>
-        <item name="android:elevation">1dp</item>
+        <item name="android:layout_margin">@dimen/cardview_layout_margin</item>
+        <item name="android:elevation">@dimen/cardview_elevation</item>
     </style>
 
     <style name="Theme.Bacon.CardView.TextView">
-        <item name="android:paddingLeft">4dp</item>
-        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">@dimen/cardview_textview_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/cardview_textview_horizontal_padding</item>
     </style>
 
     <style name="Theme.Bacon.CardView.ArticleTitle" parent="@style/Theme.Bacon.CardView.TextView">
         <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/cardview_article_title_text_size</item>
+        <item name="android:textColor">@color/cardview_article_title_text_color</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">4</item>
     </style>
 
     <style name="Theme.Bacon.CardView.ArticleSubTitle">
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#6000</item>
+        <item name="android:textSize">@dimen/cardview_article_subtitle_text_size</item>
+        <item name="android:textColor">@color/cardview_article_subtitle_text_color</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">2</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Bacon.Detail.ArticleTitle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">@color/detail_article_title_text_color</item>
+        <item name="android:textSize">@dimen/detail_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Bacon.Detail.ArticleByLine" parent="android:TextAppearance.Small">
+        <item name="android:layout_marginLeft">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginRight">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginBottom">@dimen/detail_inner_vert_margin</item>
+    </style>
+
+    <style name="Theme.Bacon.Detail.ArticleBody" parent="android:TextAppearance.Medium">
+        <item name="android:layout_marginLeft">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:layout_marginRight">@dimen/detail_inner_horiz_margin</item>
+        <item name="android:lineSpacingMultiplier">
+            @fraction/detail_body_line_spacing_multiplier
+        </item>
+        <item name="android:paddingBottom">@dimen/detail_body_bottom_margin</item>
+        <item name="android:textColorLink">@color/theme_accent</item>
+        <item name="android:textSize">@dimen/detail_body_text_size</item>
     </style>
 
 </resources>
