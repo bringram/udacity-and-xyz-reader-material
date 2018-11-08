@@ -41,7 +41,7 @@
         <item name="android:maxLines">4</item>
     </style>
 
-    <style name="Theme.Bacon.CardView.ArticleSubTitle">
+    <style name="Theme.Bacon.CardView.ArticleSubTitle" parent="@style/Theme.Bacon.CardView.TextView">
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textSize">@dimen/cardview_article_subtitle_text_size</item>
         <item name="android:textColor">@color/cardview_article_subtitle_text_color</item>
@@ -55,6 +55,7 @@
 
     <style name="Theme.Bacon.Detail.ArticleTitle">
         <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:layout_marginTop">4dp</item>
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:textColor">@color/detail_article_title_text_color</item>
@@ -75,6 +76,7 @@
             @fraction/detail_body_line_spacing_multiplier
         </item>
         <item name="android:paddingBottom">@dimen/detail_body_bottom_margin</item>
+        <item name="android:textColor">@color/cardview_article_title_text_color</item>
         <item name="android:textColorLink">@color/theme_accent</item>
         <item name="android:textSize">@dimen/detail_body_text_size</item>
     </style>

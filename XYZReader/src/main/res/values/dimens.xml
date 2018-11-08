@@ -17,4 +17,8 @@
     <dimen name="fab_elevation">6dp</dimen>
     <dimen name="fab_press_translation_z">12dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
+    <dimen name="detail_card_elevation">2dp</dimen>
+    <dimen name="custom_match_parent">-1px</dimen>
+    <dimen name="detail_card_max_width">@dimen/custom_match_parent</dimen> <!-- force match_parent -->
+    <dimen name="detail_card_marginTop">0dp</dimen>
 </resources>
