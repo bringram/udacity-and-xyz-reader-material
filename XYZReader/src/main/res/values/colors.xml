@@ -24,4 +24,9 @@
     <color name="theme_accent">#E30425</color>
 
     <color name="ltgray">#ffe0e0e0</color>
+
+    <color name="cardview_article_title_text_color">#000000</color>
+    <color name="cardview_article_subtitle_text_color">#6000</color>
+
+    <color name="detail_article_title_text_color">#fff</color>
 </resources>
